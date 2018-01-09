@@ -14,6 +14,10 @@
 
 get_header();
 
+echo '<div id="content" class="site-content">';
+	echo '<div class="container">';
+	echo '<div class="row">';
+
 	echo '<section id="primary index" class="content-area ">';
 		echo '<main id="main" class="site-main" role="main">';
 
@@ -51,5 +55,4 @@ get_header();
 		echo '</main><!-- #main -->';
 	echo '</section><!-- #primary -->';
 
-get_sidebar();
 get_footer();

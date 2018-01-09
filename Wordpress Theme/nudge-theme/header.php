@@ -3,6 +3,8 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
 </head>
@@ -19,12 +21,10 @@
 	</div>
 	<div class="collapse navbar-collapse" id="myNav">
 	<ul class="nav navbar-nav navbar-right">
-		<li><a href="http://vcm-1691.vm.duke.edu/wordpress/">Courses</a></li>
-		<li><a href="#bio">About Nudge</a></li>
+		<li><a href="<?php echo get_home_url(); ?>">Courses</a></li>
+		<li><a href="<?php echo get_home_url(); ?>/about-nudge/">About Nudge</a></li>
 	</ul>
 	</div>
 </div>
 </nav>
-<div id="content" class="site-content">
-		<div class="container">
-			<div class="row">
+

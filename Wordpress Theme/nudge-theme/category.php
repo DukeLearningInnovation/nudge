@@ -15,11 +15,9 @@ get_header();
 	echo '<section id="primary category" class="content-area">';
 		echo '<main id="main" class="site-main" role="main">';
 			$category = $wp_query->get_queried_object();
-			// use to print current category
-			// echo '<pre>' . print_r( $category, true ) . '</pre>';
 			echo '<div class="row">';
-				echo '<div class="col-sm-3">';
-					echo '<a href="http://vcm-1691.vm.duke.edu/wordpress/" class="btn btn-round btn-info" role="button"> << View All Courses </a>';
+				echo '<div class="col-sm-3">'; ?>
+					<a href="<?php echo get_home_url() ?>" class="btn btn-round btn-info" role="button"> << View All Courses </a> <?php
 				echo '</div>';
 				echo '<div class="col-sm-6">';
 					echo '<h1 align = "center">' . $category->name . '</h1>';
@@ -64,6 +62,5 @@ get_header();
 			}
 		echo '</main><!-- #main -->';
 	echo '</section><!-- #primary -->';
-get_sidebar();
-get_footer();
 
+get_footer();
