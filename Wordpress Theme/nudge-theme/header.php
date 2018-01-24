@@ -21,7 +21,6 @@
 	</div>
 	<div class="collapse navbar-collapse" id="myNav">
 	<ul class="nav navbar-nav navbar-right">
-		<li><a href="<?php echo get_home_url(); ?>">Courses</a></li>
 		<li><a href="<?php echo get_home_url(); ?>/about-nudge/">About Nudge</a></li>
 	</ul>
 	</div>

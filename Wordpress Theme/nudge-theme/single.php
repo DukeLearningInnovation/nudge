@@ -19,10 +19,10 @@ echo '<div id="content" class="site-content">';
 		global $wp;
 		$category = get_the_category();
 		$back_url = get_home_url() . '?cat=' . $category[0]->cat_ID;
-		echo '<a href="' . $back_url . '" class="btn btn-round btn-info" role="button"> << Back to ' . $category[0]->name . ' Course Page </a>';
 
 		while ( have_posts() ) : the_post();
 
+			echo '<br><br>';
 			get_template_part( 'template-parts/content', get_post_format() );
 
 		endwhile; // End of the loop.

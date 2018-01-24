@@ -115,7 +115,9 @@ li:hover b {
 li:hover p {
   color: #d9d9d9;
 }
-
+.entry-header{
+  margin-top: 60px;
+}
 
 /* @media (max-width: 979px) {
   body {

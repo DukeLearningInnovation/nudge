@@ -50,9 +50,14 @@ get_header();
 					// use to see properties of children 
 					// echo '<pre>' . print_r( $child, true ) . '</pre>';
 					$date = explode(' ', $child->post_modified);
+					$title_array = explode(' ', $child->post_title);
+					$short_title = $title_array[0] . ' ' . $title_array[1];
+					if (sizeof($title_array) > 2){
+						$short_title = $short_title . '...';
+					}
 					echo '<a href="' . $child->guid . '">';
 						echo '<li class="group img">';
-							echo '<b>' . $child->post_title . '</b>';
+							echo '<b>' . $short_title . '</b>';
 							echo '<p>' . $date[0] . '</p>';
 						echo '</li>';
 					echo '</a>';
